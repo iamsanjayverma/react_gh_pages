@@ -1,10 +1,14 @@
 {
+  "homepage": "https://iamsanjayverma.github.io/react_gh_pages",
   "name": "react_gh_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
